@@ -110,11 +110,11 @@ const init = async () => {
   ]);
   console.log(await fetchFavorites());
 
-  await destroyFavorite({
-    id: favorite.id,
-    user_id: favorite.user_id,
-  });
-  console.log(await fetchFavorites());
+//   await destroyFavorite({
+//     id: favorite.id,
+//     user_id: favorite.user_id,
+//   });
+//   console.log(await fetchFavorites());
 
   const port = process.env.PORT;
   app.listen(port, () => {
